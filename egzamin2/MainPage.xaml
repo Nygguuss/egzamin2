@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="egzamin2.MainPage">
+
+    <StackLayout BackgroundColor="#00796B" x:Name="mybac">
+        <Frame BackgroundColor="Purple" Padding="24" CornerRadius="0">
+            <Label Text="Galeria" HorizontalTextAlignment="Left" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label FontSize="30">Galeria</Label>
+        <FlexLayout HeightRequest="200">
+            <Image Source="cat.jpg" Aspect="Fill" x:Name="miejsce_zdj"/>
+        </FlexLayout>
+        <FlexLayout JustifyContent="SpaceBetween">
+            <Button Text="PREV" BackgroundColor="#004c40" Clicked="Button_Clicked"></Button>
+            <Button Text="NEXT" BackgroundColor="#004c40" Clicked="Button_Clicked_1"></Button>
+        </FlexLayout>
+        <Label FontSize="23">Który obraz wyświetlić</Label>
+        <FlexLayout >
+            <Label Text="Tło Niebieskie ?"/>
+            <Switch IsToggled="true" Toggled="Switch_Toggled"/>
+        </FlexLayout>
+        <FlexLayout Margin="0,150,0,0" BackgroundColor="#004c40">
+            <Label Text="AUTOR 999999999999" FontSize="20"/>
+        </FlexLayout>
+    </StackLayout>
+</ContentPage>
